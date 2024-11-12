@@ -34,6 +34,9 @@ public class Main
         }
      }
      System.out.println(removed);
+     /* loop the first string backwards for #3, they are the same length (string) 
+     so it's the same index, so add the 2nd string first, then first, and so on.
+     */
   }
 
   public static boolean isPrime(int N)
