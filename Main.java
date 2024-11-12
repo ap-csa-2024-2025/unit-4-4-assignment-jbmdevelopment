@@ -21,6 +21,19 @@ public class Main
         }
      }
      System.out.println("Contains p followed by a vowel " + counts + " times");
+     System.out.println("Enter another string");
+     String str = input.nextLine();
+     str = str.toLowerCase();
+     String removed = "";
+     // e, t, a, i, o
+     for(int i = 0; i < str.length(); i++) {
+        String letter = str.substring(i, i + 1);
+        boolean condition = (letter.equals("e") || letter.equals("t") || letter.equals("a") || letter.equals("i") || letter.equals("o"));
+        if(!condition) {
+            removed += letter;
+        }
+     }
+     System.out.println(removed);
   }
 
   public static boolean isPrime(int N)
